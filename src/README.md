@@ -18,7 +18,8 @@ Test the procedures one by one
 - Deploy the procedures via their scripts
 - Test the prcedures with the their respective scripts in the TestProcedures folder under Snowflake
 
-## End of migration notes
+### AI Usage
+Beyond debugging, I heavily leveraged AI in this project. As well as generating the mock data and test cases. Additionally, I used AI to translate bulks of the TSQL by parts in order to test. I think that this was the fastest way to develop. 
 
 This directory contains a set of SQL Server database objects designed to test and challenge Snowflake migration tools. These objects are modeled after common enterprise financial planning and budgeting systems.
 
