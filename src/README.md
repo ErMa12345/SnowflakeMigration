@@ -18,7 +18,7 @@ Test the procedures one by one
 - Deploy the procedures via their scripts
 - Test the prcedures with the their respective scripts in the TestProcedures folder under Snowflake
 
-## End of migrgration notes
+## End of migration notes
 
 This directory contains a set of SQL Server database objects designed to test and challenge Snowflake migration tools. These objects are modeled after common enterprise financial planning and budgeting systems.
 
