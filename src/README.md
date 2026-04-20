@@ -1,5 +1,25 @@
 # SQL Server Financial Planning Objects - Snowflake Migration Challenge Set
 
+## Migration notes
+- For the migration, the files are stored in src/Snowflake
+- I migrated usp_ProcessBudgetConsolidation.sql and the CSV functionaltiy for usp_BulkImportBudgetData.sql
+### Running the code
+Prereqs
+- Make sure you have set up snowflake account
+- In the snowflake account, upload data files (in mock folder)
+
+Initial setup
+- Run: snowsql -a [insert ur account ID] -u [insert you username] -f src/Snowflake/Deploy.sql, this will set up tables, views, functions
+- Run snowsql -a [insert ur account ID] -u [insert you username] -f Mock.sql to load mock data into tables
+- Run: snowsql -a [insert ur account ID] -u [insert you username] -f src/Snowflake/SetupStaging.sql to set up mock data storage
+- Load MockBudgetData.csv into the mock staging in snowflake
+
+Test the procedures one by one
+- Deploy the procedures via their scripts
+- Test the prcedures with the their respective scripts in the TestProcedures folder under Snowflake
+
+## End of migrgration notes
+
 This directory contains a set of SQL Server database objects designed to test and challenge Snowflake migration tools. These objects are modeled after common enterprise financial planning and budgeting systems.
 
 ## Object Inventory
